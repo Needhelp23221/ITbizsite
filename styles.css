@@ -1,0 +1,93 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }
+
+
+h1{
+    font-size: 20px;
+    background: -webkit-linear-gradient(#969293, #555454);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr 1fr));
+  grid-auto-flow: row;
+
+  }
+  .navcolor {
+  background-color: gainsboro; 
+  }
+  .container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: stretch;
+        }
+
+  .right-portion {    
+    margin-top: 10px;
+    flex:1; 
+    background-image: url(images/computer.jpg), url(images/);
+    background-position: right bottom, left top;
+    background-size: cover;
+    background-repeat:no-repeat;     
+        }
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr 1fr));
+    grid-auto-flow: row;
+    align-items: start;
+    justify-content: start;
+    justify-items: start;
+        }
+
+    .item {
+            background-color: #fff; /* Background color for items */
+            border: dashed 1px rgb(110, 110, 7);
+            text-align: center; /* Center text */
+            margin-top: 5px;
+        }
+
+    .item-content img {
+            max-width: 100%;
+            max-height: 100%;
+            image-rendering: pixelated;
+        }
+
+        .gap-color {
+            background-color: lightcoral; /* Color for the gaps */
+            position: absolute;
+            z-index: -1; /* Ensure the gap color is behind the items */
+        }
+       
